@@ -6,12 +6,10 @@ import './style.scss'
 
 class Home extends Component {
 
-	onClick(){
-		this.props.push('/hello')
-	}
+
 	render(){
 		return(
-			<div className="home" onClick={this.onClick.bind(this)}>
+			<div className="home">
 				
 
 			</div>
