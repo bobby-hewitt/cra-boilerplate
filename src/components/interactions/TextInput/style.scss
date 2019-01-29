@@ -1,0 +1,55 @@
+@import 'styles/index.scss';
+
+
+.interactions__textinput{
+	position: relative;
+	.focus{
+		transition:all 0.3s ease;
+		position: absolute;
+		left:0;
+		top:0;
+		width:0;
+		height:56px;
+		background:$primary;
+	}
+		
+	input{
+		transition:all 0.3s ease;
+		background:transparent;
+		font-size:24px;
+		padding:10px;
+		width:100%;
+		border: none;
+		border-bottom: 2px solid $primary;	
+		color: $primary;	
+		&::placeholder{
+			opacity:0.5;
+			color: $primary;	
+		}
+		&:focus{
+			outline:none;
+		}
+	}
+	&.hasFocus{
+		input{
+			margin-left:12px
+		}
+		.focus{
+			width:12px;
+				
+		}
+	}
+	&.secondary{
+		.focus{
+			background:$inverse;
+		}
+		input{
+			&::placeholder{
+				opacity:0.5;
+				color: $inverse;	
+			}
+			border-bottom: 2px solid $inverse;	
+			color:$inverse;
+		}
+	}
+}

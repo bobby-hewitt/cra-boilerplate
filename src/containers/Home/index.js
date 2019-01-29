@@ -4,22 +4,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import './style.scss'
 
-import { Header, Line, Hero, Paragraph, Subheader, Button, BackgroundImage, Gradient, Tint, Flex, Section } from 'components'
+import { Header, Line, Hero, Paragraph, TextInput, Subheader, Button, BackgroundImage, Gradient, Tint, Flex, Section } from 'components'
 
 class Home extends Component {
-
-	constructor(props){
-		super(props)
-		this.state = {
-			lineExtended: false
-		}
-	}
-
 	render(){
 		return(
 			<div className="home">
 				<Section
-					style={{height:'75vh'}}
 					backgroundTint
 					backgroundImage="https://images.unsplash.com/photo-1548611716-bd56b0f5aaa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
 					<Flex type="column" fill justify="center" align="start" >
@@ -32,7 +23,7 @@ class Home extends Component {
 					</Flex>
 				</Section>
 				<Section
-					style={{height:'75vh'}}>
+					>
 					<Flex type="column" fill justify="center" align="start" >
 						<Hero copy="Useful template" color="inverse"/>
 						<Line secondary/>
@@ -41,7 +32,25 @@ class Home extends Component {
 							<Button inactive copy="This is another button" action={() => console.log('clicked')}/>	
 						</Flex>
 					</Flex>
+				</Section>
+				<Section
+					backgroundTint
+					backgroundImage="https://images.unsplash.com/photo-1548611716-bd56b0f5aaa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
+					<Flex type="column" fill justify="center" align="start" >
+						<Hero copy="Text 'n stuff" color="primary"/>
+						<Line />
+						<TextInput placeholder="This is a text input"/>
+					</Flex>
 				</Section>	
+				<Section
+					>
+					<Flex type="column" fill justify="center" align="start" >
+						<Hero copy="Useful template" color="inverse"/>
+						<Line secondary/>
+						<TextInput secondary placeholder="This is a text input"/>
+					</Flex>
+				</Section>
+				
 			</div>
 		)
 	}

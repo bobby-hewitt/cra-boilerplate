@@ -3,7 +3,7 @@
 .UI__line{
 	transition:all 1s ease;
 	width:20px;
-	height:4px;
+	height:$baseline * 3;
 	background:$primary;
 	margin-bottom:$baseline * 5;
 	&.secondary{
