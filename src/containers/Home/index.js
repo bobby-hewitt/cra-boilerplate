@@ -32,10 +32,9 @@ class Home extends Component {
 					</Flex>
 				</Section>
 				<Section
-					style={{height:'75vh'}}
-					>
+					style={{height:'75vh'}}>
 					<Flex type="column" fill justify="center" align="start" >
-						<Hero copy="This is a useful template" color="inverse"/>
+						<Hero copy="Useful template" color="inverse"/>
 						<Line secondary/>
 						<Flex type="row" justify="start" align="start">
 							<Button copy="This is a button" action={() => console.log('clicked')}/>

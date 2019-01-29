@@ -1,4 +1,4 @@
-@import 'styles/colors.scss';
+@import 'styles/index.scss';
 
 .interaction__button{
 	cursor:pointer;
@@ -9,7 +9,6 @@
 	overflow: hidden;
 	display: inline-flex;
 	margin:0 15px 0 0; 
-
 	.fill{
 		margin:0;
 		transition: all 0.15s ease-out;

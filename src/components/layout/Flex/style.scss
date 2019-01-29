@@ -1,8 +1,6 @@
 
 .layout__flex{
 	display: flex;
-	
-	
 	&.filltrue{
 		height:100%;
 		width:100%;
@@ -30,7 +28,6 @@
 	}
 	&.justifyend{
 		justify-content:flex-end;
-	}
-	
+	}	
 }
 

@@ -1,11 +1,11 @@
-@import 'styles/colors.scss';
+@import 'styles/index.scss';
 
 .UI__line{
 	transition:all 1s ease;
 	width:20px;
 	height:4px;
 	background:$primary;
-	margin-bottom:30px;
+	margin-bottom:$baseline * 5;
 	&.secondary{
 		background:$inverse;
 	}

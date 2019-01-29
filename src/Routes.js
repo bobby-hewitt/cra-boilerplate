@@ -6,9 +6,9 @@ import Home from './containers/Home'
 const Routes = () => (
   <div>
     <main>
-      <div className="container">
+     
         <Route exact path="/" component={Home} />
-      </div>
+     
     </main>
   </div>
 )
