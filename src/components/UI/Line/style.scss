@@ -1,0 +1,16 @@
+@import 'styles/colors.scss';
+
+.UI__line{
+	transition:all 1s ease;
+	width:20px;
+	height:4px;
+	background:$primary;
+	margin-bottom:30px;
+	&.secondary{
+		background:$inverse;
+	}
+	&.extended{
+		width:200px;
+		
+	}
+}

@@ -1,0 +1,68 @@
+@import 'styles/colors.scss';
+
+.interaction__button{
+	cursor:pointer;
+	padding:10px;
+	border: 2px solid $inverse;
+	box-sizing: content-box;
+	position: relative;
+	overflow: hidden;
+	display: inline-flex;
+	margin:0 15px 0 0; 
+
+	.fill{
+		margin:0;
+		transition: all 0.15s ease-out;
+		transform:translate(-50%,-50%);
+		position:absolute;
+		top:50%;
+		left:50%;
+		height:0;
+		width:0%;
+		background:$inverse;
+	}
+	p{
+		z-index: 100;
+		color:$inverse;
+		font-size:24px;
+		-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	    -moz-user-select: none; /* mozilla browsers */
+	    -khtml-user-select: none; /* webkit (konqueror) browsers */
+	    -ms-user-select: none; /* IE10+ */
+	}
+	&.inactive{
+		opacity:0.5;
+		pointer-events: none;
+	}
+	&:hover{
+		p{
+			transition: all 0.15s ease-out 0.15s;
+			color:$primary;
+		}
+		.fill{
+			width:110%;
+			height:100%;
+		}
+	}
+	&.secondary{
+		border: 2px solid $primary;
+		p{
+			color:$primary;
+		}
+		.fill{
+			background:$primary;
+		}
+		&:hover{
+			p{
+				transition: all 0.15s ease-out 0.15s;
+				color:$inverse;
+			}
+			.fill{
+				width:110%;
+				height:100%;
+			}
+		}
+	}
+	
+
+}

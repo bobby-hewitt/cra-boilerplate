@@ -1,0 +1,9 @@
+@import 'styles/variables.scss';
+
+.layout__section{
+	width:100%;
+	padding:$baseline * 15;
+
+	box-sizing:border-box;
+	position: relative;
+}
