@@ -14,7 +14,7 @@ class Home extends Component {
 					backgroundTint
 					backgroundImage="https://images.unsplash.com/photo-1548611716-bd56b0f5aaa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
 					<Flex type="column" fill justify="center" align="start" >
-						<Hero copy="Hey there" color="primary"/>
+						<Hero copy=" " color="primary"/>
 						<Line />
 						<Flex type="row" justify="start" align="start">
 							<Button copy="This is a button" secondary action={() => console.log('clicked')}/>
@@ -25,7 +25,7 @@ class Home extends Component {
 				<Section
 					>
 					<Flex type="column" fill justify="center" align="start" >
-						<Hero copy="Useful template" color="inverse"/>
+						<Hero copy=" " color="inverse"/>
 						<Line secondary/>
 						<Flex type="row" justify="start" align="start">
 							<Button copy="This is a button" action={() => console.log('clicked')}/>
@@ -37,7 +37,7 @@ class Home extends Component {
 					backgroundTint
 					backgroundImage="https://images.unsplash.com/photo-1548611716-bd56b0f5aaa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
 					<Flex type="column" fill justify="center" align="start" >
-						<Hero copy="Text 'n stuff" color="primary"/>
+						<Hero copy=" " color="primary"/>
 						<Line />
 						<TextInput placeholder="This is a text input"/>
 					</Flex>
@@ -45,7 +45,7 @@ class Home extends Component {
 				<Section
 					>
 					<Flex type="column" fill justify="center" align="start" >
-						<Hero copy="Useful template" color="inverse"/>
+						<Hero copy=" " color="inverse"/>
 						<Line secondary/>
 						<TextInput secondary placeholder="This is a text input"/>
 					</Flex>

@@ -3,21 +3,9 @@
 
 .interactions__textinput{
 	position: relative;
-	.focus{
-		transition:all 0.3s ease;
-		position: absolute;
-		left:0;
-		top:0;
-		width:0;
-		height:56px;
-		background:$primary;
-	}
-		
 	input{
-		transition:all 0.3s ease;
 		background:transparent;
-		font-size:24px;
-		padding:10px;
+		padding:5px 10px 5px 12px;
 		width:100%;
 		border: none;
 		border-bottom: 2px solid $primary;	
@@ -32,24 +20,24 @@
 	}
 	&.hasFocus{
 		input{
-			margin-left:12px
-		}
-		.focus{
-			width:12px;
-				
+			padding-left:10px;
+			border-left: 2px solid $primary;
 		}
 	}
 	&.secondary{
-		.focus{
-			background:$inverse;
-		}
 		input{
 			&::placeholder{
 				opacity:0.5;
 				color: $inverse;	
 			}
-			border-bottom: 2px solid $inverse;	
+			border-bottom: 2px solid $inverse;
+			border-left: 0px solid $inverse;	
 			color:$inverse;
+		}
+		&.hasFocus{
+			input{
+				border-left: 2px solid $inverse;
+			}
 		}
 	}
 }
